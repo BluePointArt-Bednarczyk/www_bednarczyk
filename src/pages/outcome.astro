@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LinkPreviewCard from "../components/LinkPreviewCard.astro";
+
+const links = [
+    {
+        url: "https://example.com",
+        title: "Sympozjum",
+        description: "This is an example of a website preview card.",
+        image: "/images/plakatSympozjumBednarczyk.png",
+    },
+    {
+        url: "https://www.zppno.org/aktualnosci/sladami-bednarczykow-i-feliksa-topolskiego/",
+        title: "Tour",
+        description:
+            "12 maja 2024 roku uczestnicy spotkania przeniesieni zostali  w fascynujący świat Oficyny Poetów i Malarzy Bednarczyków oraz Pracowni Feliksa Topolskiego",
+        image: "https://astro.build/assets/social/banner.jpg",
+    },
+    {
+        url: "https://ar-heritagetour.bluepointart.uk/",
+        title: "AR Heritage app",
+        description: "Where the world builds software.",
+        image: "https://github.githubassets.com/images/modules/open_graph/github-mark.png",
+    },
+    {
+        url: "https://www.zppno.org/aktualnosci/lustra-warsztaty-artystyczne/",
+        title: "LUSTRA – WARSZTATY ARTYSTYCZNE",
+        description:
+            "LUSTRA – WARSZTATY ARTYSTYCZNE INSPIROWANE POEZJĄ KRYSTYNY BEDNARCZYK / MIRRORS – ART WORKSHOP INSPIRED BY KRYSTYNA BEDNARCZYK POETRY Prowadzenie w języku polskim i angielskim / in Polish and English: ",
+        image: "https://github.githubassets.com/images/modules/open_graph/github-mark.png",
+    },
+    {
+        url: "https://www.zppno.org/aktualnosci/training-session-for-volunteers/",
+        title: "Training session for volunteers",
+        description:
+            "The aim of this session was to prepare the volunteers to contribute effectively to the project’s objectives.",
+        image: "https://github.githubassets.com/images/modules/open_graph/github-mark.png",
+    },
+    {
+        url: "https://github.com",
+        title: "Spotkanie z mlodzieza",
+        description: "Where the world builds software.",
+        image: "https://github.githubassets.com/images/modules/open_graph/github-mark.png",
+    },
+    {
+        url: "https://www.zppno.org/aktualnosci/krystyna-i-czeslaw-dziennik-liryczny-krystyna-and-czeslaw-lyrical-diary/",
+        title: "KRYSTYNA I CZESŁAW – DZIENNIK LIRYCZNY / KRYSTYNA AND CZESŁAW – LYRICAL DIARY ",
+        description:
+            "Recital poetycki na podstawie wierszy Krystyny i Czesława Bednarczyków",
+        image: "https://astro.build/assets/social/banner.jpg",
+    },
+    {
+        url: "https://example.com",
+        title: "Archiwa MOwione",
+        description: "This is an example of a website preview card.",
+        image: "https://example.com/preview.jpg",
+    },
+
+    {
+        url: "https://github.com",
+        title: "Projekt w mediach",
+        description: "Where the world builds software.",
+        image: "https://github.githubassets.com/images/modules/open_graph/github-mark.png",
+    },
+];
+---
+
+<Layout>
+    <div class="content-container">
+        <h1>Project Outcome</h1>
+
+        <br />
+
+        <div class="cards-container">
+            {links.map((link) => <LinkPreviewCard {...link} />)}
+        </div>
+    </div>
+</Layout>

@@ -1,22 +1,40 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Astro Website</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/global.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+    <h1>Unveiling the Heritage: Krystyna Bednarczyk</h1>
+	<br />
+      <ul>
+        <li><a href="/">Map</a></li>
+        <li><a href="/about">About</a></li>
+		<li><a href="/outcome">Outcome</a></li>
+      </ul>
+    </header>
+
+    <!-- Page Content -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+	  <div class="footer-logos">
+		<img src="/images/English_Made-Possible_logo_colour_PNG-1024x368.png" alt="Logo 1" class="footer-logo">
+		<img src="/images/logo_zppno.jpg" alt="Logo 2" class="footer-logo">
+	  </div>
+    </footer>
+  </body>
+</html>
