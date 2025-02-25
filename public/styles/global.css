@@ -293,6 +293,18 @@ html body footer.footer div.footer-content div.footer-text {
   text-align: center;
 }
 
+.content-container h4{
+  padding-left: 1.8em;
+}
+
+.content-container ul li{
+  padding-left: 3em;
+  list-style: none; /* Removes default bullets */
+
+}
+
+
+
 /* Text margins for readability */
 .content-container p {
   margin-left: auto;
@@ -314,4 +326,11 @@ html body footer.footer div.footer-content div.footer-text {
     width: 90%;
     /* Almost full-width on mobile */
   }
+}
+
+.markdown-content {
+  max-width: 70vw;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Old Standard TT', serif;
 }
