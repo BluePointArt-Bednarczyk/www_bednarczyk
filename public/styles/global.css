@@ -185,7 +185,9 @@ html body main div.content-container h1 {
     margin-bottom: 10px;
   }
 }
-
+html body footer.footer div.footer-content div.footer-text-middle p a {
+	font-family: 'Helvetica Neue', Helvetica, Arial, "MS Trebuchet", sans-serif;
+}
 /* Link Preview Card */
 .link-card {
   border: 1px solid #ddd;
