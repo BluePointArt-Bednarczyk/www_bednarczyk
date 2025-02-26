@@ -181,6 +181,8 @@ html body main div.content-container h1 {
   }
 
   .footer-logos, .footer-text, .footer-text-middle {
+    font-family: 'Helvetica Neue', Helvetica, Arial, "MS Trebuchet", sans-serif;
+
     text-align: center;
     margin-bottom: 10px;
   }
