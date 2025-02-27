@@ -114,7 +114,7 @@ html body main div.content-container h1 {
 }
 
 html body main div.content-container p a img.logo-heritage-image {
-  max-width: 38em;
+  max-width: 28em;
   height: auto;
   display: block;
   /* Ensures block-level behavior */
