@@ -3,34 +3,32 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    <h1 class="text-2xl font-semibold"></h1>
-    <p class="mt-4"></p>
+    <div class="content-container">
+        <h1 class="text-2xl font-semibold"></h1>
+        <p class="mt-4"></p>
 
-    <div class="audio-container">
-        <div class="audio-item">
-            <img src="/images/alex_dabrowska.png" alt="Alex Dabrowska" class="audio-poster">
-            <audio controls>
-                <source src="https://bafybeifpn46iowbbg6om3yt6rqrtd5kuca2agzp2u5mqsigzyekfkyj3fe.ipfs.flk-ipfs.xyz" type="audio/mp3">
-                Your browser does not support the audio tag.
-            </audio>
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe
+                    src="https://player.vimeo.com/video/1061280641?h=212b7bfa84&badge=0&autopause=0&player_id=0&app_id=58479"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                    title="Alex Dąbrowska"></iframe>
+            </div>
+
+            <div class="video-wrapper">
+                <iframe
+                    src="https://player.vimeo.com/video/1061281148?h=bf93ddfdde&badge=0&autopause=0&player_id=0&app_id=58479"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                    title="Basia Roztworowska"></iframe>
+            </div>
+
+            <div class="video-wrapper">
+                <iframe
+                    src="https://player.vimeo.com/video/1061281820?h=93f4c45aab&badge=0&autopause=0&player_id=0&app_id=58479"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                    title="Janusz Gruchała"></iframe>
+            </div>
         </div>
-    
-        <div class="audio-item">
-            <img src="/images/Basia_Rostworowska.png" alt="Basia Rostworowska" class="audio-poster">
-            <audio controls>
-                <source src="https://bafybeid6slsgbp5x5esszt4anq6vpv3jheep5olzeorzxgz2pxaroefgyq.ipfs.flk-ipfs.xyz" type="audio/mp3">
-                Your browser does not support the audio tag.
-            </audio>
-        </div>
-    
-        <div class="audio-item">
-            <img src="/images/Janusz_Gruchala.png" alt="Janusz Gruchała" class="audio-poster">
-            <audio controls>
-                <source src="https://bafybeie5zxvcmpu7fv4bp6ndp5lfqgsej22ob3fz3o3ymutkstt3ibceay.ipfs.flk-ipfs.xyz" type="audio/mp3">
-                Your browser does not support the audio tag.
-            </audio>
-        </div>
+        <br />
     </div>
-    
-
 </Layout>
