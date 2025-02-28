@@ -73,12 +73,41 @@ html body div#storymap-embed.vco-storymap.vco-layout-landscape div#vco-uawfxg.vc
   align-items: center;
   justify-content: center;
 }
-
-/* Space out the title and menu */
-.navbar h1 {
-  margin-bottom: 10px;
-  /* Space between title and menu */
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between videos */
+  padding: 20px;
 }
+
+.audio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.audio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.audio-poster {
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  margin-bottom: 10px; /* Space between image and audio player */
+}
+
+audio {
+  width: 100%;
+  max-width: 400px;
+}
+
 
 /* Center the menu */
 .navbar ul {

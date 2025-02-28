@@ -6,25 +6,31 @@ import Layout from "../layouts/Layout.astro";
     <h1 class="text-2xl font-semibold"></h1>
     <p class="mt-4"></p>
 
-    <video controls width="800" poster="/images/alex_dabrowska.png">
-        <source
-            src="https://bafybeifrfkifszyg22w2qrxurm2wjudshxzotpoty7myzcqbhtgmge7ebe.ipfs.flk-ipfs.xyz"
-            type="video/mp4"
-        />
-        Your browser does not support the video tag.
-    </video>
-    <video controls width="800" poster="/images/Basia_Rostworowska.png">
-        <source
-            src="https://bafybeiemsxo7iz3nmmcdkt4poqy33ahhiy76jzq4pb75kfvchvn2cbq7ca.ipfs.flk-ipfs.xyz"
-            type="video/mp4"
-        />
-        Your browser does not support the video tag.
-    </video>
-    <video controls width="800" poster="/images/Janusz_Gruchala.png">
-        <source
-            src="https://bafybeihrjvgushwyccs4avtsrmolws7b4hz566fjjsr632xhmcvo6ysqze.ipfs.flk-ipfs.xyz"
-            type="video/mp4"
-        />
-        Your browser does not support the video tag.
-    </video>
+    <div class="audio-container">
+        <div class="audio-item">
+            <img src="/images/alex_dabrowska.png" alt="Alex Dabrowska" class="audio-poster">
+            <audio controls>
+                <source src="https://bafybeifpn46iowbbg6om3yt6rqrtd5kuca2agzp2u5mqsigzyekfkyj3fe.ipfs.flk-ipfs.xyz" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    
+        <div class="audio-item">
+            <img src="/images/Basia_Rostworowska.png" alt="Basia Rostworowska" class="audio-poster">
+            <audio controls>
+                <source src="https://bafybeid6slsgbp5x5esszt4anq6vpv3jheep5olzeorzxgz2pxaroefgyq.ipfs.flk-ipfs.xyz" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    
+        <div class="audio-item">
+            <img src="/images/Janusz_Gruchala.png" alt="Janusz Gruchała" class="audio-poster">
+            <audio controls>
+                <source src="https://bafybeie5zxvcmpu7fv4bp6ndp5lfqgsej22ob3fz3o3ymutkstt3ibceay.ipfs.flk-ipfs.xyz" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>
+    
+
 </Layout>
