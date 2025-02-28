@@ -24,6 +24,11 @@ main {
   flex: 1;
 }
 
+li, em {
+  font-family: 'Helvetica Neue', Helvetica, Arial, "MS Trebuchet", sans-serif;
+
+}
+
 
 html body header.navbar ul li a {
   font-family: 'Helvetica Neue', Helvetica, Arial, "MS Trebuchet", sans-serif;
